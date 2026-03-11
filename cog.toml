@@ -16,10 +16,12 @@ tag_prefix = "v"
 
 # might be able to put these in preb_bump_hooks if we can
 # work out the auto commit without risking autocommitting stuff by accident
-post_bump_hooks = [
+pre_bump_hooks = [
   "echo 'export const VERSION = \"{{version}}\";' > version.ts",
-  "echo '{{VERSION}}' > version.txt",
+  "echo '{{version}}' > version.txt",
   "echo -e 'package main\n\n const VERSION = \"{{version}}\"\n' > version.go",
+  "git add ./version.ts version.txt version.go",
+  "git commit -m 'chore: update version files'",
 ]
 
 [git_hooks.commit-msg]
