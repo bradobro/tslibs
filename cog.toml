@@ -14,13 +14,17 @@ skip_ci = "[skip ci]"
 skip_untracked = true
 tag_prefix = "v"
 
+post_bump_hooks = [
+  "echo 'export const VERSION = \"{{version}}\";' > version.ts",
+  "echo '{{VERSION}}' > version.txt",
+  "echo -e 'package main\n\n const VERSION = \"{{version}}\"\n' > version.go",
+]
+
 [git_hooks.commit-msg]
 script = """#!/bin/sh
 set -e
 cog verify --file $1
 """
-
-
 
 [commit_types]
 begin = { changelog_title = "Work Begun", omit_from_changelog = true }
