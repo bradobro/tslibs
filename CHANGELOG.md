@@ -2,6 +2,12 @@
 All notable changes to this project will be documented in this file. See [conventional commits](https://www.conventionalcommits.org/) for commit guidelines.
 
 - - -
+## v0.1.1 - 2026-03-11
+#### Bug Fixes
+- fixing prebump go file - (43f1b4a) - Brad Olson
+
+- - -
+
 ## v0.1.0 - 2026-03-11
 #### Features
 - testing pre-bump versioning - (9b7c357) - Brad Olson
