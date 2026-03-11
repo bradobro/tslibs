@@ -2,6 +2,12 @@
 All notable changes to this project will be documented in this file. See [conventional commits](https://www.conventionalcommits.org/) for commit guidelines.
 
 - - -
+## v0.1.0 - 2026-03-11
+#### Features
+- testing pre-bump versioning - (9b7c357) - Brad Olson
+
+- - -
+
 ## v0.0.2 - 2026-03-11
 #### Bug Fixes
 - restore git.commit-msg hook - (fdcf8dd) - Brad Olson
