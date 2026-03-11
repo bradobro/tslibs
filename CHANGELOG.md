@@ -3,25 +3,8 @@ All notable changes to this project will be documented in this file. See [conven
 
 - - -
 ## v0.1.2 - 2026-03-11
-#### Bug Fixes
-- fixing prebump go file - (a747f35) - Brad Olson
-
-- - -
-
-## v0.1.1 - 2026-03-11
-#### Bug Fixes
-- fixing prebump go file - (43f1b4a) - Brad Olson
-
-- - -
-
-## v0.1.0 - 2026-03-11
 #### Features
-- testing pre-bump versioning - (9b7c357) - Brad Olson
-
-- - -
-
-## v0.0.2 - 2026-03-11
-#### Bug Fixes
+- prebump version files (took some releases to test) - (a747f35) - Brad Olson
 - restore git.commit-msg hook - (fdcf8dd) - Brad Olson
 
 - - -
