@@ -14,7 +14,13 @@ skip_ci = "[skip ci]"
 skip_untracked = true
 tag_prefix = "v"
 
-# No hooks while we're using LogSeq's git functionality. It's messasges don't comply.
+[git_hooks.commit-msg]
+script = """#!/bin/sh
+set -e
+cog verify --file $1
+"""
+
+
 
 [commit_types]
 begin = { changelog_title = "Work Begun", omit_from_changelog = true }
