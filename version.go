@@ -1,4 +1,4 @@
--e package main
+package main
 
-const VERSION = "0.1.1"
+const VERSION = "0.1.2"
 
