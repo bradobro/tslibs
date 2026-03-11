@@ -14,8 +14,6 @@ skip_ci = "[skip ci]"
 skip_untracked = true
 tag_prefix = "v"
 
-# might be able to put these in preb_bump_hooks if we can
-# work out the auto commit without risking autocommitting stuff by accident
 pre_bump_hooks = [
   "echo 'export const VERSION = \"{{version}}\";' > version.ts",
   "echo '{{version}}' > version.txt",
