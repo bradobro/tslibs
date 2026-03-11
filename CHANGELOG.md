@@ -2,6 +2,12 @@
 All notable changes to this project will be documented in this file. See [conventional commits](https://www.conventionalcommits.org/) for commit guidelines.
 
 - - -
+## v0.0.2 - 2026-03-11
+#### Bug Fixes
+- restore git.commit-msg hook - (fdcf8dd) - Brad Olson
+
+- - -
+
 ## v0.0.1 - 2026-03-11
 #### Bug Fixes
 - setup Coccogitto - (e7c3ff6) - Brad Olson
