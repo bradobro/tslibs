@@ -17,7 +17,7 @@ tag_prefix = "v"
 pre_bump_hooks = [
   "echo 'export const VERSION = \"{{version}}\";' > version.ts",
   "echo '{{version}}' > version.txt",
-  "echo -e 'package main\n\n const VERSION = \"{{version}}\"\n' > version.go",
+  "echo -e 'package main\n\nconst VERSION = \"{{version}}\"\n' > version.go",
   "git add ./version.ts version.txt version.go",
   "git commit -m 'chore: update version files'",
 ]
